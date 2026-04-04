@@ -37,7 +37,7 @@ export default function Home() {
       </section>
 
       {/* DESTINATION / EXPERIENCE */}
-      <{/* 🔥 STATEMENT SECTION (NEW ANCHOR) */}
+      {/* 🔥 STATEMENT SECTION (NEW ANCHOR) */}
       <section className="bg-[#FF0000] px-6 py-20 text-center text-white">
         <div className="mx-auto max-w-4xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#FFD6DE]">
