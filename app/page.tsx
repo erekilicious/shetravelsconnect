@@ -27,14 +27,15 @@ export default function Home() {
 
         {/* CTA */}
         <a
-          href="https://forms.gle/sxUtR7Zok4mTBrr18"
-          target="_blank"
-          rel="noreferrer"
-          className="inline-block mt-8 bg-[#C00000] hover:bg-[#A00000] text-white px-8 py-3 rounded-2xl font-semibold shadow-lg transition duration-300 hover:scale-105"
-        >
-          Join the Waitlist ✨
-        </a>
-      </section>
+  href="https://forms.gle/sxUtR7Zok4mTBrr18"
+  target="_blank"
+  rel="noreferrer"
+  className="inline-block mt-6 rounded-2xl bg-[#FF0000] px-8 py-3 font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-[#E11D2E]"
+>
+  Join the Waitlist ✨
+</a>
+</section>
+    
 
       {/* DESTINATION / EXPERIENCE */}
       {/* 🔥 STATEMENT SECTION (NEW ANCHOR) */}
@@ -189,7 +190,7 @@ export default function Home() {
           href="https://forms.gle/sxUtR7Zok4mTBrr18"
           target="_blank"
           rel="noreferrer"
-          className="inline-block mt-6 bg-[#C00000] hover:bg-[#A00000] text-white px-8 py-3 rounded-2xl font-semibold shadow-lg transition duration-300 hover:scale-105"
+          className="inline-block mt-6 rounded-2xl bg-[#FF0000] px-8 py-3 font-semibold text-white shadow-xl border border-white/10 transition duration-300 hover:scale-105 hover:bg-[#E11D2E]"
         >
           Join the Waitlist ✨
         </a>
