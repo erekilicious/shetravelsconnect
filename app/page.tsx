@@ -37,18 +37,20 @@ export default function Home() {
       </section>
 
       {/* DESTINATION / EXPERIENCE */}
-      <section className="px-6 py-16">
-        <div className="mx-auto max-w-5xl rounded-2xl bg-white p-8 text-center shadow-lg transition duration-300 hover:shadow-xl">
-          <h2 className="text-3xl font-bold">Imagine your next trip...</h2>
-
-          <p className="mt-4 text-[#4A1C24]">
-            A sunrise yoga session in Bali. Painting by the ocean. Deep
-            conversations over coffee in a new city.
+      <{/* 🔥 STATEMENT SECTION (NEW ANCHOR) */}
+      <section className="bg-[#FF0000] px-6 py-20 text-center text-white">
+        <div className="mx-auto max-w-4xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#FFD6DE]">
+            Imagine your next trip
           </p>
 
-          <p className="mt-4 text-[#4A1C24]">
-            Not just travel — but experiences that help you reconnect
-            with yourself and others.
+          <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
+            Travel that feels softer, safer, and more meaningful.
+          </h2>
+
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#FFF0F3]">
+            Picture sunrise yoga in Bali, painting by the ocean, meaningful conversations
+            over coffee, and the comfort of exploring with women who truly get you.
           </p>
         </div>
       </section>
