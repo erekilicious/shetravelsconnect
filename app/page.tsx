@@ -44,7 +44,7 @@ export default function Page() {
             <p className="text-sm text-slate-500">Women-only travel companion matching</p>
           </div>
           <a
-            href="https://forms.gle/YVm3eTLogCrx2fwV7"
+            href="https://forms.gle/YsL7aVwFb3m8GSFn9"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:scale-[1.02]"
