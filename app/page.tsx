@@ -4,15 +4,17 @@ export default function Home() {
 
       {/* HERO */}
       <section className="px-6 py-20 text-center">
-        <span className="bg-[#FADADD] text-[#A1002B] px-4 py-2 rounded-full text-sm">
+        <span className="bg-[#FFE3EC] text-[#FF2E88] px-4 py-2 rounded-full text-sm font-medium">
           Wellness-centered travel for women ✨
         </span>
 
-        <h1 className="mt-6 text-4xl md:text-6xl font-bold">
-          Travel together. Heal, connect, and explore the world safely.
+        <h1 className="mt-6 text-4xl md:text-6xl font-bold leading-tight">
+          Travel together.{" "}
+          <span className="text-[#FF2E88]">Heal, connect,</span>{" "}
+          and explore the world safely.
         </h1>
 
-        <p className="mt-6 text-lg text-[#5C2A33] max-w-2xl mx-auto">
+        <p className="mt-6 text-lg text-[#4A1C24] max-w-2xl mx-auto">
           SheTravelsConnect helps women find like-minded travel companions and
           experience wellness-driven journeys — from yoga and creative workshops
           to meaningful connections across the world.
@@ -22,7 +24,7 @@ export default function Home() {
           href="https://forms.gle/sxUtR7Zok4mTBrr18"
           target="_blank"
           rel="noreferrer"
-          className="inline-block mt-8 bg-[#A1002B] text-white px-6 py-3 rounded-2xl font-semibold"
+          className="inline-block mt-8 bg-[#C00000] hover:bg-[#A00000] text-white px-6 py-3 rounded-2xl font-semibold shadow-lg"
         >
           Join the Waitlist ✨
         </a>
@@ -35,12 +37,12 @@ export default function Home() {
             Imagine your next trip...
           </h2>
 
-          <p className="mt-4 text-[#5C2A33]">
+          <p className="mt-4 text-[#4A1C24]">
             A sunrise yoga session in Bali. Painting by the ocean.
             Deep conversations over coffee in a new city.
           </p>
 
-          <p className="mt-4 text-[#5C2A33]">
+          <p className="mt-4 text-[#4A1C24]">
             Not just travel — but experiences that help you reconnect
             with yourself and others.
           </p>
@@ -65,8 +67,10 @@ export default function Home() {
             },
           ].map((item) => (
             <div key={item.title} className="bg-white p-6 rounded-2xl shadow-md">
-              <h3 className="text-xl font-semibold">{item.title}</h3>
-              <p className="mt-3 text-[#5C2A33]">{item.text}</p>
+              <h3 className="text-xl font-semibold text-[#2A0E12]">
+                {item.title}
+              </h3>
+              <p className="mt-3 text-[#4A1C24]">{item.text}</p>
             </div>
           ))}
         </div>
@@ -75,14 +79,14 @@ export default function Home() {
       {/* WELLNESS TEXT */}
       <section className="px-6 py-16 text-center">
         <h2 className="text-3xl font-bold">
-          Travel that nurtures you
+          Travel that <span className="text-[#FF2E88]">nurtures you</span>
         </h2>
 
-        <p className="mt-6 text-[#5C2A33]">
+        <p className="mt-6 text-[#4A1C24]">
           This is about more than where you go. It’s about how you feel.
         </p>
 
-        <div className="mt-6 space-y-2 text-[#5C2A33]">
+        <div className="mt-6 space-y-2 text-[#4A1C24]">
           <p>🧘🏽‍♀️ Yoga & mindfulness</p>
           <p>🎨 Creative experiences</p>
           <p>☕ Slow, meaningful moments</p>
@@ -98,7 +102,7 @@ export default function Home() {
           <div className="rounded-2xl overflow-hidden shadow-md">
             <img
               src="/founder.jpg"
-              alt="founder"
+              alt="Founder"
               className="w-full h-full object-cover"
             />
           </div>
@@ -106,24 +110,24 @@ export default function Home() {
           {/* TEXT */}
           <div>
             <h2 className="text-3xl font-bold">
-              Built with intention
+              Built with <span className="text-[#FF2E88]">intention</span>
             </h2>
 
-            <p className="mt-4 text-[#5C2A33] text-lg">
+            <p className="mt-4 text-[#4A1C24] text-lg">
               Hi, I’m Erekiye — Founder of SheTravelsConnect.
             </p>
 
-            <p className="mt-4 text-[#5C2A33]">
+            <p className="mt-4 text-[#4A1C24]">
               I created this platform because I know what it feels like to want to
               explore the world, but not always feel safe or supported doing it alone.
             </p>
 
-            <p className="mt-4 text-[#5C2A33]">
+            <p className="mt-4 text-[#4A1C24]">
               SheTravelsConnect is about more than travel — it’s about connection,
               confidence, and creating meaningful experiences with women who truly get you.
             </p>
 
-            <p className="mt-4 text-[#A1002B] font-semibold">
+            <p className="mt-4 text-[#C00000] font-semibold">
               Travel should feel safe, intentional, and deeply fulfilling.
             </p>
           </div>
@@ -133,10 +137,11 @@ export default function Home() {
       {/* FINAL CTA */}
       <section className="px-6 py-20 text-center">
         <h2 className="text-3xl font-bold">
-          Your next journey starts here
+          Your next journey starts{" "}
+          <span className="text-[#FF2E88]">here</span>
         </h2>
 
-        <p className="mt-4 text-[#5C2A33]">
+        <p className="mt-4 text-[#4A1C24]">
           Join a growing community of women redefining travel.
         </p>
 
@@ -144,7 +149,7 @@ export default function Home() {
           href="https://forms.gle/sxUtR7Zok4mTBrr18"
           target="_blank"
           rel="noreferrer"
-          className="inline-block mt-6 bg-[#A1002B] text-white px-6 py-3 rounded-2xl font-semibold"
+          className="inline-block mt-6 bg-[#C00000] hover:bg-[#A00000] text-white px-6 py-3 rounded-2xl font-semibold shadow-lg"
         >
           Join the Waitlist ✨
         </a>
