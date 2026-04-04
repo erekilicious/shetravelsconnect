@@ -95,18 +95,18 @@ export default function Home() {
 
         <div className="mx-auto mt-8 grid max-w-3xl gap-4 sm:grid-cols-2">
           {[
-            "🧘🏽‍♀️ Yoga & mindfulness",
-            "🎨 Creative experiences",
-            "☕ Slow, meaningful moments",
-            "🌅 Travel that recharges you",
-          ].map((item) => (
-            <div
-              key={item}
-              className="rounded-2xl bg-white px-5 py-4 text-[#4A1C24] shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
-            >
-              {item}
-            </div>
-          ))}
+  "🧘🏽‍♀️ Yoga & mindfulness",
+  "🎨 Creative experiences",
+  "☕ Slow, meaningful moments",
+  "🌅 Travel that recharges you",
+].map((item) => (
+  <div
+    key={item}
+    className="rounded-2xl bg-[#FFEAEA] px-6 py-4 text-[#C00000] shadow-md border border-[#FFD6DE] transition duration-300 hover:-translate-y-1 hover:bg-[#FFD6DE] hover:shadow-lg"
+  >
+    {item}
+  </div>
+))}
         </div>
       </section>
 
