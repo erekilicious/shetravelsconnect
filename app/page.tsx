@@ -9,8 +9,7 @@ export default function Home() {
         </span>
 
         <h1 className="mt-6 text-4xl font-bold leading-tight md:text-6xl">
-          Travel together. <span className="text-[#FF2E88]">Heal, connect,</span>{" "}
-          and explore the world safely.
+          Travel together. <span className="text-[#FF2E88]">Heal, connect,</span> and explore the world safely.
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-[#4A1C24]">
@@ -19,36 +18,37 @@ export default function Home() {
           to meaningful connections across the world.
         </p>
 
+        {/* SOCIAL PROOF */}
         <div className="mx-auto mt-6 inline-flex items-center rounded-full bg-white px-5 py-3 shadow-md">
-          <span className="text-sm font-semibold text-[#FF0000]">
+          <span className="text-sm font-semibold text-[#C00000]">
             Join 150+ women already signed up 💖
           </span>
         </div>
 
+        {/* CTA */}
         <a
           href="https://forms.gle/sxUtR7Zok4mTBrr18"
           target="_blank"
           rel="noreferrer"
-          className="inline-block mt-8 rounded-2xl bg-[#FF0000] px-8 py-3 font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-[#E11D2E]"
+          className="inline-block mt-8 bg-[#C00000] hover:bg-[#A00000] text-white px-8 py-3 rounded-2xl font-semibold shadow-lg transition duration-300 hover:scale-105"
         >
           Join the Waitlist ✨
         </a>
       </section>
 
-      {/* 🔥 STATEMENT SECTION (NEW ANCHOR) */}
-      <section className="bg-[#FF0000] px-6 py-20 text-center text-white">
-        <div className="mx-auto max-w-4xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#FFD6DE]">
-            Imagine your next trip
+      {/* DESTINATION / EXPERIENCE */}
+      <section className="px-6 py-16">
+        <div className="mx-auto max-w-5xl rounded-2xl bg-white p-8 text-center shadow-lg transition duration-300 hover:shadow-xl">
+          <h2 className="text-3xl font-bold">Imagine your next trip...</h2>
+
+          <p className="mt-4 text-[#4A1C24]">
+            A sunrise yoga session in Bali. Painting by the ocean. Deep
+            conversations over coffee in a new city.
           </p>
 
-          <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
-            Travel that feels softer, safer, and more meaningful.
-          </h2>
-
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#FFF0F3]">
-            From wellness experiences to genuine connection, SheTravelsConnect helps women
-            explore the world in a way that feels intentional, supported, and unforgettable.
+          <p className="mt-4 text-[#4A1C24]">
+            Not just travel — but experiences that help you reconnect
+            with yourself and others.
           </p>
         </div>
       </section>
@@ -74,9 +74,7 @@ export default function Home() {
               key={item.title}
               className="rounded-2xl bg-white p-6 shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
-              <h3 className="text-xl font-semibold text-[#2A0E12]">
-                {item.title}
-              </h3>
+              <h3 className="text-xl font-semibold text-[#2A0E12]">{item.title}</h3>
               <p className="mt-3 text-[#4A1C24]">{item.text}</p>
             </div>
           ))}
@@ -113,7 +111,8 @@ export default function Home() {
       {/* FOUNDER */}
       <section className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl items-center gap-10 rounded-2xl bg-white p-8 shadow-lg transition duration-300 hover:shadow-xl md:grid-cols-2">
-          <div className="overflow-hidden rounded-2xl shadow-md">
+          {/* IMAGE */}
+          <div className="overflow-hidden rounded-3xl shadow-md">
             <img
               src="/founder.jpg"
               alt="Erekiye, Founder of SheTravelsConnect"
@@ -121,27 +120,33 @@ export default function Home() {
             />
           </div>
 
-          <div>
-            <h2 className="text-3xl font-bold">
+          {/* TEXT */}
+          <div className="bg-[#FFF0F4] p-6 rounded-2xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#FF2E88]">
+              Founder Story
+            </p>
+
+            <h2 className="mt-3 text-3xl font-bold">
               Built with <span className="text-[#FF2E88]">intention</span>
             </h2>
 
-            <p className="mt-4 text-lg text-[#4A1C24]">
-              Hi, I’m Erekiye — Founder of SheTravelsConnect.
+            <p className="mt-4 text-lg font-semibold text-[#2A0E12]">
+              Erekiye
+              <span className="block text-sm font-normal text-[#7A3B45]">
+                Founder, SheTravelsConnect
+              </span>
             </p>
 
             <p className="mt-4 text-[#4A1C24]">
-              I created this platform because I know what it feels like to want to
-              explore the world, but not always feel safe or supported doing it alone.
+              I created SheTravelsConnect because I know what it feels like to want to explore the world, but not always feel safe or supported doing it alone.
             </p>
 
-            <p className="mt-4 text-[#4A1C24]">
-              SheTravelsConnect is about more than travel — it’s about connection,
-              confidence, and creating meaningful experiences with women who truly get you.
+            <p className="mt-3 text-[#4A1C24]">
+              This platform is for women who want more than just a trip — it’s for women who want connection, wellness, confidence, and meaningful experiences while discovering the world.
             </p>
 
-            <p className="mt-4 font-semibold text-[#FF0000]">
-              Travel should feel safe, intentional, and deeply fulfilling.
+            <p className="mt-5 italic text-lg text-[#FF0000] font-medium">
+              “Travel should feel safe, intentional, and deeply fulfilling.”
             </p>
 
             {/* INSTAGRAM LINKS */}
@@ -152,7 +157,7 @@ export default function Home() {
                 rel="noreferrer"
                 className="rounded-2xl bg-[#FFE3EC] px-5 py-3 text-[#FF2E88] font-medium transition hover:scale-105"
               >
-                Follow Erekiye
+                Meet the Founder
               </a>
 
               <a
@@ -161,14 +166,14 @@ export default function Home() {
                 rel="noreferrer"
                 className="rounded-2xl bg-[#FFEAEA] px-5 py-3 text-[#FF0000] font-medium transition hover:scale-105"
               >
-                Follow SheTravelsConnect
+                Join our Journey
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FINAL CTA */}
+      {/* FINAL CTA */ */}
       <section className="px-6 py-20 text-center">
         <h2 className="text-3xl font-bold">
           Your next journey starts <span className="text-[#FF2E88]">here</span>
@@ -182,23 +187,10 @@ export default function Home() {
           href="https://forms.gle/sxUtR7Zok4mTBrr18"
           target="_blank"
           rel="noreferrer"
-          className="inline-block mt-6 rounded-2xl bg-[#FF0000] px-8 py-3 font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-[#E11D2E]"
+          className="inline-block mt-6 bg-[#C00000] hover:bg-[#A00000] text-white px-8 py-3 rounded-2xl font-semibold shadow-lg transition duration-300 hover:scale-105"
         >
           Join the Waitlist ✨
         </a>
-
-        {/* INSTAGRAM FOOTER */}
-        <div className="mt-8 text-sm text-[#4A1C24]">
-          <p>Connect with us:</p>
-          <div className="flex justify-center gap-4 mt-2">
-            <a href="https://instagram.com/erekilicious" className="text-[#FF2E88] hover:underline">
-              @erekilicious
-            </a>
-            <a href="https://instagram.com/SheTravelsConnect" className="text-[#FF0000] hover:underline">
-              @SheTravelsConnect
-            </a>
-          </div>
-        </div>
       </section>
 
     </main>
