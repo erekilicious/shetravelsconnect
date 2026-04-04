@@ -1,7 +1,6 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#FFF5F7] text-[#2A0E12]">
-
       {/* HERO */}
       <section className="px-6 py-20 text-center">
         <span className="inline-block rounded-full bg-[#FFE3EC] px-4 py-2 text-sm font-medium text-[#FF2E88] shadow-sm">
@@ -9,7 +8,8 @@ export default function Home() {
         </span>
 
         <h1 className="mt-6 text-4xl font-bold leading-tight md:text-6xl">
-          Travel together. <span className="text-[#FF2E88]">Heal, connect,</span> and explore the world safely.
+          Travel together. <span className="text-[#FF2E88]">Heal, connect,</span>{" "}
+          and explore the world safely.
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-[#4A1C24]">
@@ -18,19 +18,17 @@ export default function Home() {
           to meaningful connections across the world.
         </p>
 
-        {/* SOCIAL PROOF */}
         <div className="mx-auto mt-6 inline-flex items-center rounded-full bg-white px-5 py-3 shadow-md">
-          <span className="text-sm font-semibold text-[#C00000]">
+          <span className="text-sm font-semibold text-[#FF0000]">
             Join 150+ women already signed up 💖
           </span>
         </div>
 
-        {/* CTA */}
         <a
           href="https://forms.gle/sxUtR7Zok4mTBrr18"
           target="_blank"
           rel="noreferrer"
-          className="inline-block mt-8 bg-[#C00000] hover:bg-[#A00000] text-white px-8 py-3 rounded-2xl font-semibold shadow-lg transition duration-300 hover:scale-105"
+          className="inline-block mt-8 rounded-2xl bg-[#FF0000] px-8 py-3 font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-[#E11D2E]"
         >
           Join the Waitlist ✨
         </a>
@@ -47,8 +45,8 @@ export default function Home() {
           </p>
 
           <p className="mt-4 text-[#4A1C24]">
-            Not just travel — but experiences that help you reconnect
-            with yourself and others.
+            Not just travel — but experiences that help you reconnect with
+            yourself and others.
           </p>
         </div>
       </section>
@@ -74,7 +72,9 @@ export default function Home() {
               key={item.title}
               className="rounded-2xl bg-white p-6 shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
-              <h3 className="text-xl font-semibold text-[#2A0E12]">{item.title}</h3>
+              <h3 className="text-xl font-semibold text-[#2A0E12]">
+                {item.title}
+              </h3>
               <p className="mt-3 text-[#4A1C24]">{item.text}</p>
             </div>
           ))}
@@ -114,7 +114,7 @@ export default function Home() {
           <div className="overflow-hidden rounded-2xl shadow-md">
             <img
               src="/founder.jpg"
-              alt="Founder"
+              alt="Erekiye, Founder of SheTravelsConnect"
               className="h-full w-full object-cover"
             />
           </div>
@@ -138,9 +138,29 @@ export default function Home() {
               confidence, and creating meaningful experiences with women who truly get you.
             </p>
 
-            <p className="mt-4 font-semibold text-[#C00000]">
+            <p className="mt-4 font-semibold text-[#FF0000]">
               Travel should feel safe, intentional, and deeply fulfilling.
             </p>
+
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a
+                href="https://instagram.com/erekilicious"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-block rounded-2xl border border-[#FFD0E1] bg-[#FFF5F7] px-5 py-3 font-medium text-[#FF2E88] transition duration-300 hover:scale-105 hover:bg-[#FFE3EC]"
+              >
+                Follow Erekiye on Instagram
+              </a>
+
+              <a
+                href="https://instagram.com/SheTravelsConnect"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-block rounded-2xl border border-[#FFD0E1] bg-[#FFF5F7] px-5 py-3 font-medium text-[#FF0000] transition duration-300 hover:scale-105 hover:bg-[#FFEAEA]"
+              >
+                Follow SheTravelsConnect
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -159,12 +179,36 @@ export default function Home() {
           href="https://forms.gle/sxUtR7Zok4mTBrr18"
           target="_blank"
           rel="noreferrer"
-          className="inline-block mt-6 bg-[#C00000] hover:bg-[#A00000] text-white px-8 py-3 rounded-2xl font-semibold shadow-lg transition duration-300 hover:scale-105"
+          className="inline-block mt-6 rounded-2xl bg-[#FF0000] px-8 py-3 font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-[#E11D2E]"
         >
           Join the Waitlist ✨
         </a>
-      </section>
 
+        <div className="mt-8 space-y-2 text-sm text-[#4A1C24]">
+          <p>
+            Connect with us on Instagram:
+          </p>
+          <div className="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
+            <a
+              href="https://instagram.com/erekilicious"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-[#FF2E88] transition hover:underline"
+            >
+              @erekilicious
+            </a>
+            <span className="hidden sm:inline text-[#D18A9B]">|</span>
+            <a
+              href="https://instagram.com/SheTravelsConnect"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-[#FF0000] transition hover:underline"
+            >
+              @SheTravelsConnect
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
