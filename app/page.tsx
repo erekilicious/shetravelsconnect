@@ -98,7 +98,7 @@ export default function Home() {
           <div className="rounded-2xl overflow-hidden shadow-md">
             <img
               src="/founder.jpg"
-              alt="Founder"
+              alt="founder"
               className="w-full h-full object-cover"
             />
           </div>
