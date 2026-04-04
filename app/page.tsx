@@ -1,6 +1,7 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#FFF5F7] text-[#2A0E12]">
+
       {/* HERO */}
       <section className="px-6 py-20 text-center">
         <span className="inline-block rounded-full bg-[#FFE3EC] px-4 py-2 text-sm font-medium text-[#FF2E88] shadow-sm">
@@ -34,19 +35,20 @@ export default function Home() {
         </a>
       </section>
 
-      {/* DESTINATION / EXPERIENCE */}
-      <section className="px-6 py-16">
-        <div className="mx-auto max-w-5xl rounded-2xl bg-white p-8 text-center shadow-lg transition duration-300 hover:shadow-xl">
-          <h2 className="text-3xl font-bold">Imagine your next trip...</h2>
-
-          <p className="mt-4 text-[#4A1C24]">
-            A sunrise yoga session in Bali. Painting by the ocean. Deep
-            conversations over coffee in a new city.
+      {/* 🔥 STATEMENT SECTION (NEW ANCHOR) */}
+      <section className="bg-[#FF0000] px-6 py-20 text-center text-white">
+        <div className="mx-auto max-w-4xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#FFD6DE]">
+            Imagine your next trip
           </p>
 
-          <p className="mt-4 text-[#4A1C24]">
-            Not just travel — but experiences that help you reconnect with
-            yourself and others.
+          <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
+            Travel that feels softer, safer, and more meaningful.
+          </h2>
+
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#FFF0F3]">
+            From wellness experiences to genuine connection, SheTravelsConnect helps women
+            explore the world in a way that feels intentional, supported, and unforgettable.
           </p>
         </div>
       </section>
@@ -142,21 +144,22 @@ export default function Home() {
               Travel should feel safe, intentional, and deeply fulfilling.
             </p>
 
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            {/* INSTAGRAM LINKS */}
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <a
                 href="https://instagram.com/erekilicious"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-block rounded-2xl border border-[#FFD0E1] bg-[#FFF5F7] px-5 py-3 font-medium text-[#FF2E88] transition duration-300 hover:scale-105 hover:bg-[#FFE3EC]"
+                className="rounded-2xl bg-[#FFE3EC] px-5 py-3 text-[#FF2E88] font-medium transition hover:scale-105"
               >
-                Follow Erekiye on Instagram
+                Follow Erekiye
               </a>
 
               <a
                 href="https://instagram.com/SheTravelsConnect"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-block rounded-2xl border border-[#FFD0E1] bg-[#FFF5F7] px-5 py-3 font-medium text-[#FF0000] transition duration-300 hover:scale-105 hover:bg-[#FFEAEA]"
+                className="rounded-2xl bg-[#FFEAEA] px-5 py-3 text-[#FF0000] font-medium transition hover:scale-105"
               >
                 Follow SheTravelsConnect
               </a>
@@ -184,31 +187,20 @@ export default function Home() {
           Join the Waitlist ✨
         </a>
 
-        <div className="mt-8 space-y-2 text-sm text-[#4A1C24]">
-          <p>
-            Connect with us on Instagram:
-          </p>
-          <div className="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
-            <a
-              href="https://instagram.com/erekilicious"
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium text-[#FF2E88] transition hover:underline"
-            >
+        {/* INSTAGRAM FOOTER */}
+        <div className="mt-8 text-sm text-[#4A1C24]">
+          <p>Connect with us:</p>
+          <div className="flex justify-center gap-4 mt-2">
+            <a href="https://instagram.com/erekilicious" className="text-[#FF2E88] hover:underline">
               @erekilicious
             </a>
-            <span className="hidden sm:inline text-[#D18A9B]">|</span>
-            <a
-              href="https://instagram.com/SheTravelsConnect"
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium text-[#FF0000] transition hover:underline"
-            >
+            <a href="https://instagram.com/SheTravelsConnect" className="text-[#FF0000] hover:underline">
               @SheTravelsConnect
             </a>
           </div>
         </div>
       </section>
+
     </main>
   );
 }
