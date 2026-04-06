@@ -1,7 +1,6 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#FFF5F7] text-[#2A0E12]">
-
       {/* HERO */}
       <section className="px-6 py-20 text-center">
         <span className="inline-block rounded-full bg-[#FFE3EC] px-4 py-2 text-sm font-medium text-[#FF2E88] shadow-sm">
@@ -9,7 +8,8 @@ export default function Home() {
         </span>
 
         <h1 className="mt-6 text-4xl font-bold leading-tight md:text-6xl">
-          Travel together. <span className="text-[#FF2E88]">Heal, connect,</span> and explore the world safely.
+          Travel together. <span className="text-[#FF2E88]">Heal, connect,</span>{" "}
+          and explore the world safely.
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-[#4A1C24]">
@@ -18,55 +18,23 @@ export default function Home() {
           to meaningful connections across the world.
         </p>
 
-        {/* SOCIAL PROOF */}
         <div className="mx-auto mt-6 inline-flex items-center rounded-full bg-white px-5 py-3 shadow-md">
-          <span className="text-sm font-semibold text-[#C00000]">
+          <span className="text-sm font-semibold text-[#FF0000]">
             Join 150+ women already signed up 💖
           </span>
         </div>
 
-        {/* CTA */}
         <a
-  href="https://forms.gle/sxUtR7Zok4mTBrr18"
-  target="_blank"
-  rel="noreferrer"
-  className="inline-block mt-6 rounded-2xl bg-[#FF0000] px-8 py-3 font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-[#E11D2E]"
->
-  Join the Waitlist ✨
-</a>
-</section>
-{/* SAFETY SECTION */}
-<section className="px-6 py-20 text-center">
-  <div className="mx-auto max-w-4xl">
-    <h2 className="text-3xl font-bold">
-      Travel with <span className="text-[#FF2E88]">confidence</span>
-    </h2>
+          href="https://forms.gle/sxUtR7Zok4mTBrr18"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-block mt-8 rounded-2xl bg-[#FF0000] px-8 py-3 font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-[#E11D2E]"
+        >
+          Join the Waitlist ✨
+        </a>
+      </section>
 
-    <p className="mt-4 text-[#4A1C24]">
-      Your safety isn’t an afterthought — it’s built into every part of the experience.
-    </p>
-  </div>
-
-  <div className="mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-2">
-    {[
-      "🔐 Verified profiles & identity checks",
-      "👭 Women-only community",
-      "🛡️ Safety-first matching system",
-      "💬 Build trust before you travel",
-    ].map((item) => (
-      <div
-        key={item}
-        className="rounded-2xl bg-[#FFEAEA] px-6 py-4 text-[#C00000] shadow-md border border-[#FFD6DE] transition duration-300 hover:-translate-y-1 hover:bg-[#FFD6DE] hover:shadow-lg"
-      >
-        {item}
-      </div>
-    ))}
-  </div>
-</section>
-    
-
-      {/* DESTINATION / EXPERIENCE */}
-      {/* 🔥 STATEMENT SECTION (NEW ANCHOR) */}
+      {/* STATEMENT SECTION */}
       <section className="bg-[#FF0000] px-6 py-20 text-center text-white">
         <div className="mx-auto max-w-4xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#FFD6DE]">
@@ -78,10 +46,73 @@ export default function Home() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#FFF0F3]">
-            Picture sunrise yoga in Bali, painting by the ocean, meaningful conversations
-            over coffee, and the comfort of exploring with women who truly get you.
+            From wellness experiences to genuine connection, SheTravelsConnect helps women
+            explore the world in a way that feels intentional, supported, and unforgettable.
           </p>
         </div>
+      </section>
+
+      {/* SAFETY SECTION */}
+      <section className="px-6 py-20 text-center">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="text-3xl font-bold">
+            Travel with <span className="text-[#FF2E88]">confidence</span>
+          </h2>
+
+          <p className="mt-4 text-[#4A1C24]">
+            Your safety isn’t an afterthought — it’s built into every part of the experience.
+          </p>
+        </div>
+
+        <div className="mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-2">
+          {[
+            "🔐 Verified profiles & identity checks",
+            "👭 Women-only community",
+            "🛡️ Safety-first matching system",
+            "💬 Build trust before you travel",
+          ].map((item) => (
+            <div
+              key={item}
+              className="rounded-2xl bg-[#FFEAEA] px-6 py-4 text-[#C00000] shadow-md border border-[#FFD6DE] transition duration-300 hover:-translate-y-1 hover:bg-[#FFD6DE] hover:shadow-lg"
+            >
+              {item}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* SAFETY CIRCLE */}
+      <section className="px-6 py-20 text-center">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="text-3xl font-bold">
+            Stay connected, even when you're far away
+          </h2>
+
+          <p className="mt-4 text-[#4A1C24]">
+            With our Safety Circle feature, you can share your journey with trusted contacts —
+            giving you peace of mind while keeping your loved ones reassured.
+          </p>
+        </div>
+
+        <div className="mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-2">
+          {[
+            "📍 Optional real-time location sharing",
+            "👨‍👩‍👧 Share trip updates with family & friends",
+            "🔐 Full control over who sees your information",
+            "⏱️ Automated safety check-ins during your journey",
+          ].map((item) => (
+            <div
+              key={item}
+              className="rounded-2xl bg-[#FFEAEA] px-6 py-4 text-[#C00000] shadow-md border border-[#FFD6DE] transition duration-300 hover:-translate-y-1 hover:bg-[#FFD6DE] hover:shadow-lg"
+            >
+              {item}
+            </div>
+          ))}
+        </div>
+
+        <p className="mt-6 text-sm text-[#7A3B45]">
+          ✨ Available as part of our premium safety features
+        </p>
       </section>
 
       {/* HOW IT WORKS */}
@@ -105,8 +136,8 @@ export default function Home() {
               key={item.title}
               className="rounded-2xl bg-[#FFEAEA] p-6 text-[#C00000] shadow-md border border-[#FFD6DE] transition duration-300 hover:-translate-y-2 hover:bg-[#FFD6DE] hover:shadow-xl"
             >
-              <h3 className="text-xl font-semibold text-[#2A0E12]">{item.title}</h3>
-              <p className="mt-3 text-[#4A1C24]">{item.text}</p>
+              <h3 className="text-xl font-semibold">{item.title}</h3>
+              <p className="mt-3 text-[#7A3B45]">{item.text}</p>
             </div>
           ))}
         </div>
@@ -124,25 +155,24 @@ export default function Home() {
 
         <div className="mx-auto mt-8 grid max-w-3xl gap-4 sm:grid-cols-2">
           {[
-  "🧘🏽‍♀️ Yoga & mindfulness",
-  "🎨 Creative experiences",
-  "☕ Slow, meaningful moments",
-  "🌅 Travel that recharges you",
-].map((item) => (
-  <div
-    key={item}
-    className="rounded-2xl bg-[#FFEAEA] px-6 py-4 text-[#C00000] shadow-md border border-[#FFD6DE] transition duration-300 hover:-translate-y-1 hover:bg-[#FFD6DE] hover:shadow-lg"
-  >
-    {item}
-  </div>
-))}
+            "🧘🏽‍♀️ Yoga & mindfulness",
+            "🎨 Creative experiences",
+            "☕ Slow, meaningful moments",
+            "🌅 Travel that recharges you",
+          ].map((item) => (
+            <div
+              key={item}
+              className="rounded-2xl bg-[#FFEAEA] px-6 py-4 text-[#C00000] shadow-md border border-[#FFD6DE] transition duration-300 hover:-translate-y-1 hover:bg-[#FFD6DE] hover:shadow-lg"
+            >
+              {item}
+            </div>
+          ))}
         </div>
       </section>
 
       {/* FOUNDER */}
       <section className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl items-center gap-10 rounded-2xl bg-white p-8 shadow-lg transition duration-300 hover:shadow-xl md:grid-cols-2">
-          {/* IMAGE */}
           <div className="overflow-hidden rounded-3xl shadow-md">
             <img
               src="/founder.jpg"
@@ -151,8 +181,7 @@ export default function Home() {
             />
           </div>
 
-          {/* TEXT */}
-          <div className="bg-[#FFF0F4] p-6 rounded-2xl">
+          <div className="rounded-2xl bg-[#FFF0F4] p-6">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#FF2E88]">
               Founder Story
             </p>
@@ -169,24 +198,26 @@ export default function Home() {
             </p>
 
             <p className="mt-4 text-[#4A1C24]">
-              I created SheTravelsConnect because I know what it feels like to want to explore the world, but not always feel safe or supported doing it alone.
+              I created SheTravelsConnect because I know what it feels like to want to
+              explore the world, but not always feel safe or supported doing it alone.
             </p>
 
             <p className="mt-3 text-[#4A1C24]">
-              This platform is for women who want more than just a trip — it’s for women who want connection, wellness, confidence, and meaningful experiences while discovering the world.
+              This platform is for women who want more than just a trip — it’s for women
+              who want connection, wellness, confidence, and meaningful experiences while
+              discovering the world.
             </p>
 
-            <p className="mt-5 italic text-lg text-[#FF0000] font-medium">
+            <p className="mt-5 text-lg font-medium italic text-[#FF0000]">
               “Travel should feel safe, intentional, and deeply fulfilling.”
             </p>
 
-            {/* INSTAGRAM LINKS */}
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <a
                 href="https://instagram.com/erekilicious"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-2xl bg-[#FFE3EC] px-5 py-3 text-[#FF2E88] font-medium transition hover:scale-105"
+                className="rounded-2xl bg-[#FFE3EC] px-5 py-3 font-medium text-[#FF2E88] transition hover:scale-105"
               >
                 Meet the Founder
               </a>
@@ -195,7 +226,7 @@ export default function Home() {
                 href="https://instagram.com/SheTravelsConnect"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-2xl bg-[#FFEAEA] px-5 py-3 text-[#FF0000] font-medium transition hover:scale-105"
+                className="rounded-2xl bg-[#FFEAEA] px-5 py-3 font-medium text-[#FF0000] transition hover:scale-105"
               >
                 Join our Journey
               </a>
@@ -218,12 +249,33 @@ export default function Home() {
           href="https://forms.gle/sxUtR7Zok4mTBrr18"
           target="_blank"
           rel="noreferrer"
-          className="inline-block mt-6 rounded-2xl bg-[#FF0000] px-8 py-3 font-semibold text-white shadow-xl border border-white/10 transition duration-300 hover:scale-105 hover:bg-[#E11D2E]"
+          className="inline-block mt-6 rounded-2xl bg-[#FF0000] px-8 py-3 font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-[#E11D2E]"
         >
           Join the Waitlist ✨
         </a>
-      </section>
 
+        <div className="mt-8 text-sm text-[#4A1C24]">
+          <p>Connect with us:</p>
+          <div className="mt-2 flex justify-center gap-4">
+            <a
+              href="https://instagram.com/erekilicious"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[#FF2E88] hover:underline"
+            >
+              @erekilicious
+            </a>
+            <a
+              href="https://instagram.com/SheTravelsConnect"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[#FF0000] hover:underline"
+            >
+              @SheTravelsConnect
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
