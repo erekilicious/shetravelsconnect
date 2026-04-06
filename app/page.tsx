@@ -116,7 +116,7 @@ export default function Home() {
       </section>
 
       {/* HOW IT WORKS HEADER — SOFT RED */}
-<section className="bg-[#FF0000]/90 px-6 py-12 text-center text-white">
+<section className="bg-[#FF0000]/90 px-6 py-16 text-center text-white">
   <h2 className="text-3xl font-bold md:text-4xl">
     How it works — your journey in 3 simple steps
   </h2>
