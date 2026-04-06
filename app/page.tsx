@@ -115,12 +115,12 @@ export default function Home() {
         </p>
       </section>
 
-      {/* HOW IT WORKS HEADER — STRONG RED */}
-<section className="bg-[#FF0000] px-6 py-12 text-center text-white">
+      {/* HOW IT WORKS HEADER — SOFT RED */}
+<section className="bg-[#FF0000]/90 px-6 py-12 text-center text-white">
   <h2 className="text-3xl font-bold md:text-4xl">
     How it works — your journey in 3 simple steps
   </h2>
-  <p className="mt-3 text-[#FFD6DE]">
+  <p className="mt-3 text-[#FFE3EC]">
     A simple, safe, and intentional way to travel and connect
   </p>
 </section>
