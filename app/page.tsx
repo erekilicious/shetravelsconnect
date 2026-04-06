@@ -35,6 +35,34 @@ export default function Home() {
   Join the Waitlist ✨
 </a>
 </section>
+{/* SAFETY SECTION */}
+<section className="px-6 py-20 text-center">
+  <div className="mx-auto max-w-4xl">
+    <h2 className="text-3xl font-bold">
+      Travel with <span className="text-[#FF2E88]">confidence</span>
+    </h2>
+
+    <p className="mt-4 text-[#4A1C24]">
+      Your safety isn’t an afterthought — it’s built into every part of the experience.
+    </p>
+  </div>
+
+  <div className="mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-2">
+    {[
+      "🔐 Verified profiles & identity checks",
+      "👭 Women-only community",
+      "🛡️ Safety-first matching system",
+      "💬 Build trust before you travel",
+    ].map((item) => (
+      <div
+        key={item}
+        className="rounded-2xl bg-[#FFEAEA] px-6 py-4 text-[#C00000] shadow-md border border-[#FFD6DE] transition duration-300 hover:-translate-y-1 hover:bg-[#FFD6DE] hover:shadow-lg"
+      >
+        {item}
+      </div>
+    ))}
+  </div>
+</section>
     
 
       {/* DESTINATION / EXPERIENCE */}
