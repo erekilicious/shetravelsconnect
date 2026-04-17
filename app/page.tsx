@@ -2,17 +2,6 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#FFF5F7] text-[#2A0E12]">
 
-      {/* HEADER */}
-      <header className="px-6 py-6 bg-[#FFF5F7]">
-        <div className="mx-auto max-w-6xl flex items-center justify-center">
-          <img
-            src="/logo.png"
-            alt="SheTravelsConnect logo"
-            className="h-12 md:h-14 w-auto"
-          />
-        </div>
-      </header>
-
       {/* HERO */}
       <section className="px-6 py-20 text-center">
         <span className="inline-block rounded-full bg-[#FFE3EC] px-4 py-2 text-sm font-medium text-[#FF2E88] shadow-sm">
@@ -40,7 +29,7 @@ export default function Home() {
           href="https://forms.gle/sxUtR7Zok4mTBrr18"
           target="_blank"
           rel="noreferrer"
-          className="inline-block mt-8 rounded-2xl bg-[#FF0000] px-8 py-3 font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-[#E11D2E]"
+          className="inline-block mt-8 rounded-2xl bg-[#FF0000] px-8 py-3 font-semibold text-white shadow-lg hover:scale-105 hover:bg-[#E11D2E]"
         >
           Join the Waitlist ✨
         </a>
@@ -115,6 +104,44 @@ export default function Home() {
               <p className="mt-3 text-[#7A3B45]">{item.text}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* FOUNDER & SOCIAL */}
+      <section className="px-6 py-20 text-center">
+        <div className="mx-auto max-w-4xl">
+
+          <h2 className="text-3xl font-bold">
+            Meet the <span className="text-[#FF2E88]">founder</span>
+          </h2>
+
+          <p className="mt-6 text-[#4A1C24] max-w-2xl mx-auto">
+            Created by Erekiye — SheTravelsConnect was built to help women travel
+            safely, connect deeply, and experience the world in a more meaningful way.
+          </p>
+
+          <div className="mt-8 flex flex-col items-center gap-4">
+
+            <a
+              href="https://instagram.com/erekilicious"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[#FF2E88] font-semibold hover:underline"
+            >
+              Follow the founder ✨
+            </a>
+
+            <a
+              href="https://instagram.com/shetravelsconnect"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[#FF0000] font-semibold hover:underline"
+            >
+              Follow SheTravelsConnect 🌍
+            </a>
+
+          </div>
+
         </div>
       </section>
 
